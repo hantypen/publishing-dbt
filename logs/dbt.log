@@ -19848,3 +19848,1786 @@ select
     timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
 from "prod"."raw"."appointment_edited_event"
   );
+[0m17:16:30.047213 [debug] [Thread-2  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:16:30.048800 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:30.049299 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:30.049640 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:30.139433 [debug] [Thread-1  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:16:30.390259 [debug] [Thread-3  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:16:31.020778 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:31.021880 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:31.022545 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:16:31.153982 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:31.172401 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event"
+[0m17:16:31.179650 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:31.180252 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event" cascade
+[0m17:16:31.440933 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:31.441790 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:31.442145 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:31.442408 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:32.184719 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:32.185583 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:32.186123 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:16:32.316116 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:32.321942 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:32.322312 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:32.322661 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+alter table "prod"."staging"."stg_appointment_deleted_event__dbt_tmp" rename to "stg_appointment_deleted_event"
+[0m17:16:32.323041 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:32.323428 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:33.308344 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:33.311024 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:33.311688 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:16:33.441329 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:33.446732 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event"
+[0m17:16:33.448441 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:33.449085 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event" cascade
+[0m17:16:33.550691 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:33.589898 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:33.590733 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:33.591255 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:33.721666 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:33.725677 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:33.726980 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:33.727764 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:35.010233 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:35.011173 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:35.011791 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:35.012347 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:16:35.141628 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:35.145761 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:35.146308 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:35.146745 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+alter table "prod"."staging"."stg_appointment_added_event__dbt_tmp" rename to "stg_appointment_added_event"
+[0m17:16:35.147243 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:35.147745 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:36.097579 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:36.100274 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:36.101579 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:16:36.233180 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:36.242021 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event"
+[0m17:16:36.244024 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:36.244699 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event" cascade
+[0m17:16:36.334571 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:36.338281 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:36.339077 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:36.339687 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:36.504699 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:36.506447 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:36.507110 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:36.507618 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:37.753231 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:37.753970 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:37.754654 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:37.755483 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:16:37.885169 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:37.893724 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:37.897187 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:37.897954 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:16:37.898619 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+alter table "prod"."staging"."stg_appointment_edited_event__dbt_tmp" rename to "stg_appointment_edited_event"
+[0m17:16:38.159236 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:38.169050 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event__dbt_backup"
+[0m17:16:38.171032 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:38.171697 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event__dbt_backup" cascade
+[0m17:16:38.432833 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:38.437802 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:38.439577 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:38.440879 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:16:38.887349 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:38.889244 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:16:38.890611 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:16:39.022573 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:39.027712 [debug] [Thread-2  ]: Timing info for model.dbt_remote.stg_appointment_deleted_event (execute): 17:16:26.446510 => 17:16:39.026903
+[0m17:16:39.028603 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:39.029376 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: ROLLBACK
+[0m17:16:39.030027 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:16:39.137456 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:39.144558 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:39.146364 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:39.147339 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:39.289981 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:39.291514 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: Close
+[0m17:16:39.305132 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event__dbt_backup"
+[0m17:16:39.308364 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:39.309455 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event__dbt_backup" cascade
+[0m17:16:39.311049 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de0ad645-4773-47b1-8408-f8b3d1a3edd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f9f280>]}
+[0m17:16:39.312639 [info ] [Thread-2  ]: 2 of 4 OK created sql table model staging.stg_appointment_deleted_event ........ [[32mSUCCESS[0m in 12.92s]
+[0m17:16:39.314159 [debug] [Thread-2  ]: Finished running node model.dbt_remote.stg_appointment_deleted_event
+[0m17:16:39.570596 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:39.575517 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:39.577204 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:39.578424 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:16:40.050853 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:40.052036 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:40.053324 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:16:40.054777 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:16:40.186062 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:40.189657 [debug] [Thread-1  ]: Timing info for model.dbt_remote.stg_appointment_added_event (execute): 17:16:26.424084 => 17:16:40.189107
+[0m17:16:40.191179 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:40.191991 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: ROLLBACK
+[0m17:16:40.192833 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:16:40.454845 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: Close
+[0m17:16:40.455600 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:40.456459 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de0ad645-4773-47b1-8408-f8b3d1a3edd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f06a60>]}
+[0m17:16:40.459791 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event__dbt_backup"
+[0m17:16:40.460449 [info ] [Thread-1  ]: 1 of 4 OK created sql table model staging.stg_appointment_added_event .......... [[32mSUCCESS[0m in 14.07s]
+[0m17:16:40.461442 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:40.461960 [debug] [Thread-1  ]: Finished running node model.dbt_remote.stg_appointment_added_event
+[0m17:16:40.462300 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event__dbt_backup" cascade
+[0m17:16:40.722330 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:40.725614 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:40.727075 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:40.728917 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:16:40.866396 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:40.868111 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:16:40.869930 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:16:41.000009 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:41.003561 [debug] [Thread-3  ]: Timing info for model.dbt_remote.stg_appointment_edited_event (execute): 17:16:26.405211 => 17:16:41.002760
+[0m17:16:41.004941 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: ROLLBACK
+[0m17:16:41.265102 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: Close
+[0m17:16:41.268278 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de0ad645-4773-47b1-8408-f8b3d1a3edd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068619a0>]}
+[0m17:16:41.269630 [info ] [Thread-3  ]: 3 of 4 OK created sql table model staging.stg_appointment_edited_event ......... [[32mSUCCESS[0m in 14.88s]
+[0m17:16:41.270704 [debug] [Thread-3  ]: Finished running node model.dbt_remote.stg_appointment_edited_event
+[0m17:16:41.272656 [debug] [Thread-4  ]: Began running node model.dbt_remote.fact_apointment_schedule
+[0m17:16:41.274379 [info ] [Thread-4  ]: 4 of 4 START sql table model public.fact_apointment_schedule ................... [RUN]
+[0m17:16:41.278054 [debug] [Thread-4  ]: Acquiring new redshift connection 'model.dbt_remote.fact_apointment_schedule'
+[0m17:16:41.279729 [debug] [Thread-4  ]: Began compiling node model.dbt_remote.fact_apointment_schedule
+[0m17:16:41.324392 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:41.325000 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:16:41.325372 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m17:16:41.325989 [debug] [Thread-4  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:16:41.326365 [debug] [Thread-4  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:16:42.448890 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:42.450167 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:42.451041 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'stg_appointment_added_event'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'stg_appointment_added_event'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'staging'
+        and tablename = 'stg_appointment_added_event'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    where table_schema = 'staging'
+    
+    order by ordinal_position
+[0m17:16:42.824596 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:42.834969 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:42.837953 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (compile): 17:16:41.280244 => 17:16:42.837316
+[0m17:16:42.838992 [debug] [Thread-4  ]: Began executing node model.dbt_remote.fact_apointment_schedule
+[0m17:16:42.855849 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:42.862346 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:42.863018 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+  
+    
+
+  create  table
+    "prod"."public"."fact_apointment_schedule__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+
+
+with added_and_edited as (
+
+    select * from "prod"."staging"."stg_appointment_added_event"
+    union all
+    select * from "prod"."staging"."stg_appointment_edited_event"
+),
+
+find_dublicates as (
+select 
+    *,
+    row_number() over (partition by appointment_id order by ingested_at_timestamp desc) as rnk
+from added_and_edited),
+
+cancelled as (
+    select appointment_id, true as cancelled_flag
+    from "prod"."staging"."stg_appointment_deleted_event"
+)
+
+select find_dublicates."appointment_id",
+  find_dublicates."first_name",
+  find_dublicates."last_name",
+  find_dublicates."email",
+  find_dublicates."appointment_date",
+  find_dublicates."appointment_time_start",
+  find_dublicates."appointment_time_end",
+  find_dublicates."appointment_type",
+  find_dublicates."calendar_name",
+  find_dublicates."appointment_created_at",
+  find_dublicates."ingested_at_timestamp",
+        coalesce(cancelled.cancelled_flag, false) as cancelled_flag,
+        datediff(minute,appointment_time_start,appointment_time_end) as appointment_lenght_minutes
+
+ from find_dublicates
+
+left join cancelled
+on cancelled.appointment_id = find_dublicates.appointment_id
+where rnk = 1
+  );
+[0m17:16:53.755174 [debug] [Thread-4  ]: SQL status: SUCCESS in 11.0 seconds
+[0m17:16:53.760194 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:53.761103 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:53.761682 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:54.785384 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:54.788103 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:54.789402 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:16:54.921777 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:54.936580 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule"
+[0m17:16:54.939837 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:54.940883 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule" cascade
+[0m17:16:55.203965 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:55.209178 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:55.210706 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:55.211731 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:56.265120 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:56.267889 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:56.269247 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:16:56.399498 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:56.416619 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:56.418464 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+alter table "prod"."public"."fact_apointment_schedule__dbt_tmp" rename to "fact_apointment_schedule"
+[0m17:16:57.446557 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:57.456369 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:57.458530 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:57.459884 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:58.441421 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:16:58.443617 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:58.444441 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:16:58.704826 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:58.713187 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule__dbt_backup"
+[0m17:16:58.715825 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:58.716628 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule__dbt_backup" cascade
+[0m17:16:58.976752 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:58.981531 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:58.983275 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:58.984558 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:16:59.120626 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:59.123144 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:16:59.124432 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:16:59.255691 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:16:59.260603 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (execute): 17:16:42.839595 => 17:16:59.259770
+[0m17:16:59.262145 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: ROLLBACK
+[0m17:16:59.522523 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: Close
+[0m17:16:59.527485 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de0ad645-4773-47b1-8408-f8b3d1a3edd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109104370>]}
+[0m17:16:59.529934 [info ] [Thread-4  ]: 4 of 4 OK created sql table model public.fact_apointment_schedule .............. [[32mSUCCESS[0m in 18.25s]
+[0m17:16:59.532603 [debug] [Thread-4  ]: Finished running node model.dbt_remote.fact_apointment_schedule
+[0m17:16:59.537242 [debug] [MainThread]: Using redshift connection "master"
+[0m17:16:59.538200 [debug] [MainThread]: On master: BEGIN
+[0m17:16:59.538843 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:16:59.539981 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:16:59.540679 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:17:00.638204 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m17:17:00.638574 [debug] [MainThread]: On master: COMMIT
+[0m17:17:00.638883 [debug] [MainThread]: Using redshift connection "master"
+[0m17:17:00.639113 [debug] [MainThread]: On master: COMMIT
+[0m17:17:00.896558 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:17:00.897767 [debug] [MainThread]: On master: Close
+[0m17:17:00.899681 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:17:00.900325 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_added_event' was properly closed.
+[0m17:17:00.900831 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_deleted_event' was properly closed.
+[0m17:17:00.901297 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_edited_event' was properly closed.
+[0m17:17:00.901760 [debug] [MainThread]: Connection 'model.dbt_remote.fact_apointment_schedule' was properly closed.
+[0m17:17:00.902478 [info ] [MainThread]: 
+[0m17:17:00.903107 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 39.71 seconds (39.71s).
+[0m17:17:00.905178 [debug] [MainThread]: Command end result
+[0m17:17:00.932878 [info ] [MainThread]: 
+[0m17:17:00.933731 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:17:00.934548 [info ] [MainThread]: 
+[0m17:17:00.935361 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m17:17:00.938050 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 40.29759, "process_user_time": 2.679926, "process_kernel_time": 0.313556, "process_mem_max_rss": "134742016", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:17:00.938810 [debug] [MainThread]: Command `dbt run` succeeded at 17:17:00.938634 after 40.30 seconds
+[0m17:17:00.939335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1024c5670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b54d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091ddbb0>]}
+[0m17:17:00.939885 [debug] [MainThread]: Flushing usage events
+[0m17:20:45.768274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066c6670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087d7160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087e3310>]}
+
+
+============================== 17:20:45.771358 | df0a9c12-8418-4af3-9f49-ccca3fb15501 ==============================
+[0m17:20:45.771358 [info ] [MainThread]: Running with dbt=1.7.1
+[0m17:20:45.771731 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/annaantypenko/Desktop/Code/publishing-dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/annaantypenko/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run -s +fact_apointment_schedule', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:20:45.953016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087d7160>]}
+[0m17:20:46.001179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090529a0>]}
+[0m17:20:46.002443 [info ] [MainThread]: Registered adapter: redshift=1.7.0
+[0m17:20:46.012281 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m17:20:46.047711 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:20:46.047981 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:20:46.048375 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_remote.example
+[0m17:20:46.052107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098d10d0>]}
+[0m17:20:46.089064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109311820>]}
+[0m17:20:46.089389 [info ] [MainThread]: Found 4 models, 2 tests, 3 sources, 0 exposures, 0 metrics, 570 macros, 0 groups, 0 semantic models
+[0m17:20:46.089596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093113d0>]}
+[0m17:20:46.090437 [info ] [MainThread]: 
+[0m17:20:46.090918 [debug] [MainThread]: Acquiring new redshift connection 'master'
+[0m17:20:46.091616 [debug] [ThreadPool]: Acquiring new redshift connection 'list_prod'
+[0m17:20:46.101465 [debug] [ThreadPool]: Using redshift connection "list_prod"
+[0m17:20:46.101930 [debug] [ThreadPool]: Acquiring new redshift connection 'list_prod'
+[0m17:20:46.102126 [debug] [ThreadPool]: On list_prod: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod"} */
+
+    select distinct nspname from pg_namespace
+[0m17:20:46.103732 [debug] [ThreadPool]: Using redshift connection "list_prod"
+[0m17:20:46.103929 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:20:46.104114 [debug] [ThreadPool]: On list_prod: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod"} */
+
+    select distinct nspname from pg_namespace
+[0m17:20:46.106086 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:46.106301 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:20:46.106492 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:46.106781 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:46.107933 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:47.389605 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:47.390726 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:47.393684 [debug] [ThreadPool]: On list_prod: Close
+[0m17:20:47.396581 [debug] [ThreadPool]: On list_prod: Close
+[0m17:20:47.401109 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_prod, now list_prod_staging)
+[0m17:20:47.408607 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_prod, now list_prod_public)
+[0m17:20:47.414720 [debug] [ThreadPool]: Using redshift connection "list_prod_staging"
+[0m17:20:47.421938 [debug] [ThreadPool]: Using redshift connection "list_prod_public"
+[0m17:20:47.422399 [debug] [ThreadPool]: On list_prod_staging: BEGIN
+[0m17:20:47.422795 [debug] [ThreadPool]: On list_prod_public: BEGIN
+[0m17:20:47.423155 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:20:47.423500 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:20:47.424021 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:47.424504 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:47.424903 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:47.425277 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:48.551575 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:48.553651 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:48.554822 [debug] [ThreadPool]: Using redshift connection "list_prod_staging"
+[0m17:20:48.556029 [debug] [ThreadPool]: Using redshift connection "list_prod_public"
+[0m17:20:48.557183 [debug] [ThreadPool]: On list_prod_staging: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod_staging"} */
+select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema,
+        'table' as type
+    from information_schema.tables
+    where table_schema ilike 'staging'
+    and table_type = 'BASE TABLE'
+    union all
+    select
+      table_catalog as database,
+      table_name as name,
+      table_schema as schema,
+      case
+        when view_definition ilike '%create materialized view%'
+          then 'materialized_view'
+        else 'view'
+      end as type
+    from information_schema.views
+    where table_schema ilike 'staging'
+[0m17:20:48.558224 [debug] [ThreadPool]: On list_prod_public: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod_public"} */
+select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema,
+        'table' as type
+    from information_schema.tables
+    where table_schema ilike 'public'
+    and table_type = 'BASE TABLE'
+    union all
+    select
+      table_catalog as database,
+      table_name as name,
+      table_schema as schema,
+      case
+        when view_definition ilike '%create materialized view%'
+          then 'materialized_view'
+        else 'view'
+      end as type
+    from information_schema.views
+    where table_schema ilike 'public'
+[0m17:20:48.836360 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:48.838059 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:48.844060 [debug] [ThreadPool]: On list_prod_staging: ROLLBACK
+[0m17:20:48.848547 [debug] [ThreadPool]: On list_prod_public: ROLLBACK
+[0m17:20:49.117160 [debug] [ThreadPool]: On list_prod_staging: Close
+[0m17:20:49.119090 [debug] [ThreadPool]: On list_prod_public: Close
+[0m17:20:49.148274 [debug] [MainThread]: Using redshift connection "master"
+[0m17:20:49.149069 [debug] [MainThread]: On master: BEGIN
+[0m17:20:49.149816 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:20:49.150592 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:49.151153 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:50.268227 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:50.268824 [debug] [MainThread]: Using redshift connection "master"
+[0m17:20:50.269233 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "master"} */
+with
+    relation as (
+        select
+            pg_class.oid as relation_id,
+            pg_class.relname as relation_name,
+            pg_class.relnamespace as schema_id,
+            pg_namespace.nspname as schema_name,
+            pg_class.relkind as relation_type
+        from pg_class
+        join pg_namespace
+          on pg_class.relnamespace = pg_namespace.oid
+        where pg_namespace.nspname != 'information_schema'
+          and pg_namespace.nspname not like 'pg\_%'
+    ),
+    dependency as (
+        select distinct
+            coalesce(pg_rewrite.ev_class, pg_depend.objid) as dep_relation_id,
+            pg_depend.refobjid as ref_relation_id,
+            pg_depend.refclassid as ref_class_id
+        from pg_depend
+        left join pg_rewrite
+          on pg_depend.objid = pg_rewrite.oid
+        where coalesce(pg_rewrite.ev_class, pg_depend.objid) != pg_depend.refobjid
+    )
+
+select distinct
+    dep.schema_name as dependent_schema,
+    dep.relation_name as dependent_name,
+    ref.schema_name as referenced_schema,
+    ref.relation_name as referenced_name
+from dependency
+join relation ref
+    on dependency.ref_relation_id = ref.relation_id
+join relation dep
+    on dependency.dep_relation_id = dep.relation_id
+[0m17:20:50.568410 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:50.574223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099cdca0>]}
+[0m17:20:50.576250 [debug] [MainThread]: On master: ROLLBACK
+[0m17:20:50.847898 [debug] [MainThread]: Using redshift connection "master"
+[0m17:20:50.848914 [debug] [MainThread]: On master: BEGIN
+[0m17:20:50.979633 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:50.981043 [debug] [MainThread]: On master: COMMIT
+[0m17:20:50.982076 [debug] [MainThread]: Using redshift connection "master"
+[0m17:20:50.982734 [debug] [MainThread]: On master: COMMIT
+[0m17:20:51.240991 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:51.241898 [debug] [MainThread]: On master: Close
+[0m17:20:51.243569 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m17:20:51.244172 [info ] [MainThread]: 
+[0m17:20:51.249371 [debug] [Thread-1  ]: Began running node model.dbt_remote.stg_appointment_added_event
+[0m17:20:51.250376 [debug] [Thread-2  ]: Began running node model.dbt_remote.stg_appointment_deleted_event
+[0m17:20:51.252055 [debug] [Thread-3  ]: Began running node model.dbt_remote.stg_appointment_edited_event
+[0m17:20:51.253103 [info ] [Thread-1  ]: 1 of 4 START sql table model staging.stg_appointment_added_event ............... [RUN]
+[0m17:20:51.254815 [info ] [Thread-2  ]: 2 of 4 START sql table model staging.stg_appointment_deleted_event ............. [RUN]
+[0m17:20:51.257317 [info ] [Thread-3  ]: 3 of 4 START sql table model staging.stg_appointment_edited_event .............. [RUN]
+[0m17:20:51.259953 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_prod_staging, now model.dbt_remote.stg_appointment_added_event)
+[0m17:20:51.261635 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_prod_public, now model.dbt_remote.stg_appointment_deleted_event)
+[0m17:20:51.264143 [debug] [Thread-3  ]: Acquiring new redshift connection 'model.dbt_remote.stg_appointment_edited_event'
+[0m17:20:51.265166 [debug] [Thread-1  ]: Began compiling node model.dbt_remote.stg_appointment_added_event
+[0m17:20:51.265941 [debug] [Thread-2  ]: Began compiling node model.dbt_remote.stg_appointment_deleted_event
+[0m17:20:51.266669 [debug] [Thread-3  ]: Began compiling node model.dbt_remote.stg_appointment_edited_event
+[0m17:20:51.274583 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:51.281001 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:51.290381 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_edited_event"
+[0m17:20:51.292235 [debug] [Thread-1  ]: Timing info for model.dbt_remote.stg_appointment_added_event (compile): 17:20:51.267162 => 17:20:51.291886
+[0m17:20:51.292970 [debug] [Thread-3  ]: Timing info for model.dbt_remote.stg_appointment_edited_event (compile): 17:20:51.282585 => 17:20:51.292584
+[0m17:20:51.293620 [debug] [Thread-2  ]: Timing info for model.dbt_remote.stg_appointment_deleted_event (compile): 17:20:51.275154 => 17:20:51.293322
+[0m17:20:51.294192 [debug] [Thread-1  ]: Began executing node model.dbt_remote.stg_appointment_added_event
+[0m17:20:51.294756 [debug] [Thread-3  ]: Began executing node model.dbt_remote.stg_appointment_edited_event
+[0m17:20:51.296223 [debug] [Thread-2  ]: Began executing node model.dbt_remote.stg_appointment_deleted_event
+[0m17:20:51.370647 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:51.371543 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:51.372021 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_edited_event"
+[0m17:20:51.373408 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:51.373643 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:20:51.373847 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m17:20:51.374145 [debug] [Thread-2  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:51.374359 [debug] [Thread-2  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:51.375896 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:51.376125 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:20:51.376324 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m17:20:51.376572 [debug] [Thread-1  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:51.376780 [debug] [Thread-1  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:51.378368 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:20:51.378604 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:20:51.378805 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m17:20:51.379056 [debug] [Thread-3  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:20:51.379262 [debug] [Thread-3  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:20:52.496573 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:52.498765 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:52.500346 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:52.501586 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:52.503020 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_added_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date as appointment_date,
+    appointment_time_start::time as appointment_time_start,
+    appointment_time_end::time as appointment_time_end,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp as appointment_created_at,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_added_event"
+  );
+[0m17:20:52.504134 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_deleted_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date,
+    appointment_time_start::time,
+    appointment_time_end::time,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_deleted_event"
+  );
+[0m17:20:52.518807 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:52.519987 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:20:52.520824 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_edited_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date,
+    appointment_time_start::time,
+    appointment_time_end::time,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_edited_event"
+  );
+[0m17:20:54.773300 [debug] [Thread-1  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:20:54.777132 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:54.778196 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:54.778830 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:55.029151 [debug] [Thread-2  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:20:55.615572 [debug] [Thread-3  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:20:55.882817 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:55.884572 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:55.885537 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:20:56.017483 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:56.035711 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event"
+[0m17:20:56.043031 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:56.043629 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event" cascade
+[0m17:20:56.303739 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:56.306385 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:56.307598 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:56.308550 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:57.110190 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:57.111244 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:57.111886 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:20:57.242389 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:57.250449 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:20:57.259456 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:57.260388 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:57.261122 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+alter table "prod"."staging"."stg_appointment_added_event__dbt_tmp" rename to "stg_appointment_added_event"
+[0m17:20:57.261767 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:20:58.158849 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:58.161501 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:58.162914 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:20:58.293895 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:58.308061 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event"
+[0m17:20:58.311325 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:58.312354 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event" cascade
+[0m17:20:58.387681 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:20:58.437017 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:58.437971 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:20:58.438456 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:20:58.572089 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:20:58.576414 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:20:58.578119 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:20:58.579423 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:21:00.348233 [debug] [Thread-1  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:21:00.350299 [debug] [Thread-2  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:21:00.353569 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:00.355101 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:21:00.486135 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:00.493946 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:00.496095 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:00.496851 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:00.497561 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+alter table "prod"."staging"."stg_appointment_deleted_event__dbt_tmp" rename to "stg_appointment_deleted_event"
+[0m17:21:00.498265 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:01.520666 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:01.522335 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:01.523376 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:21:01.655688 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:01.668122 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event"
+[0m17:21:01.671871 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:01.672806 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event" cascade
+[0m17:21:01.778808 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:01.786705 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:21:01.788293 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:01.789361 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:21:01.935619 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:01.939695 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:01.941325 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:01.942735 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:03.772238 [debug] [Thread-3  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:21:03.773730 [debug] [Thread-2  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:21:03.775714 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:03.779588 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:21:03.929475 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:03.939922 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:21:03.945301 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:03.946255 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:21:03.947133 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+alter table "prod"."staging"."stg_appointment_edited_event__dbt_tmp" rename to "stg_appointment_edited_event"
+[0m17:21:04.281607 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:04.291800 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event__dbt_backup"
+[0m17:21:04.293819 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:21:04.294461 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event__dbt_backup" cascade
+[0m17:21:04.616661 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:04.619490 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:21:04.620298 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:21:04.620889 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:21:04.793659 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:04.795350 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:21:04.796110 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:21:04.929455 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:04.933444 [debug] [Thread-1  ]: Timing info for model.dbt_remote.stg_appointment_added_event (execute): 17:20:51.296730 => 17:21:04.933019
+[0m17:21:04.934503 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:04.935447 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: ROLLBACK
+[0m17:21:04.936273 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:21:05.048290 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:05.053823 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:05.054778 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:05.055367 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:05.254368 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: Close
+[0m17:21:05.255291 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:05.264100 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109afbdf0>]}
+[0m17:21:05.267170 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event__dbt_backup"
+[0m17:21:05.268357 [info ] [Thread-1  ]: 1 of 4 OK created sql table model staging.stg_appointment_added_event .......... [[32mSUCCESS[0m in 14.01s]
+[0m17:21:05.271638 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:05.272983 [debug] [Thread-1  ]: Finished running node model.dbt_remote.stg_appointment_added_event
+[0m17:21:05.273732 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event__dbt_backup" cascade
+[0m17:21:05.533086 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:05.536432 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:21:05.537878 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:05.539305 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:21:05.947431 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:05.949371 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:05.951488 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:21:05.953779 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:21:06.084501 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:06.087563 [debug] [Thread-2  ]: Timing info for model.dbt_remote.stg_appointment_deleted_event (execute): 17:20:51.341214 => 17:21:06.087141
+[0m17:21:06.089231 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:06.090589 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: ROLLBACK
+[0m17:21:06.091931 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:21:06.350535 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:06.352787 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event__dbt_backup"
+[0m17:21:06.353648 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: Close
+[0m17:21:06.354426 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:06.356765 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event__dbt_backup" cascade
+[0m17:21:06.359164 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099c7eb0>]}
+[0m17:21:06.360298 [info ] [Thread-2  ]: 2 of 4 OK created sql table model staging.stg_appointment_deleted_event ........ [[32mSUCCESS[0m in 15.10s]
+[0m17:21:06.361072 [debug] [Thread-2  ]: Finished running node model.dbt_remote.stg_appointment_deleted_event
+[0m17:21:06.618586 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:06.623255 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:06.625030 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:06.626399 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:21:06.762911 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:06.765536 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:21:06.766915 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:21:06.897011 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:06.901343 [debug] [Thread-3  ]: Timing info for model.dbt_remote.stg_appointment_edited_event (execute): 17:20:51.310075 => 17:21:06.900508
+[0m17:21:06.902820 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: ROLLBACK
+[0m17:21:07.163463 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: Close
+[0m17:21:07.168183 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092afbe0>]}
+[0m17:21:07.170584 [info ] [Thread-3  ]: 3 of 4 OK created sql table model staging.stg_appointment_edited_event ......... [[32mSUCCESS[0m in 15.90s]
+[0m17:21:07.172982 [debug] [Thread-3  ]: Finished running node model.dbt_remote.stg_appointment_edited_event
+[0m17:21:07.175736 [debug] [Thread-4  ]: Began running node model.dbt_remote.fact_apointment_schedule
+[0m17:21:07.177493 [info ] [Thread-4  ]: 4 of 4 START sql table model public.fact_apointment_schedule ................... [RUN]
+[0m17:21:07.179802 [debug] [Thread-4  ]: Acquiring new redshift connection 'model.dbt_remote.fact_apointment_schedule'
+[0m17:21:07.180923 [debug] [Thread-4  ]: Began compiling node model.dbt_remote.fact_apointment_schedule
+[0m17:21:07.240941 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:07.241355 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:21:07.241644 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m17:21:07.242046 [debug] [Thread-4  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:21:07.242345 [debug] [Thread-4  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:21:08.361965 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:08.364128 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:08.365919 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'stg_appointment_added_event'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'stg_appointment_added_event'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'staging'
+        and tablename = 'stg_appointment_added_event'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    where table_schema = 'staging'
+    
+    order by ordinal_position
+[0m17:21:08.735557 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:08.752510 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:08.755072 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (compile): 17:21:07.181533 => 17:21:08.754432
+[0m17:21:08.756041 [debug] [Thread-4  ]: Began executing node model.dbt_remote.fact_apointment_schedule
+[0m17:21:08.769274 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:08.776138 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:08.776822 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+  
+    
+
+  create  table
+    "prod"."public"."fact_apointment_schedule__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+
+
+with added_and_edited as (
+
+    select * from "prod"."staging"."stg_appointment_added_event"
+    union all
+    select * from "prod"."staging"."stg_appointment_edited_event"
+),
+
+find_dublicates as (
+select 
+    *,
+    row_number() over (partition by appointment_id order by ingested_at_timestamp desc) as rnk
+from added_and_edited),
+
+cancelled as (
+    select appointment_id, true as cancelled_flag
+    from "prod"."staging"."stg_appointment_deleted_event"
+)
+
+select find_dublicates."appointment_id",
+  find_dublicates."first_name",
+  find_dublicates."last_name",
+  find_dublicates."email",
+  find_dublicates."appointment_date",
+  find_dublicates."appointment_time_start",
+  find_dublicates."appointment_time_end",
+  find_dublicates."appointment_type",
+  find_dublicates."calendar_name",
+  find_dublicates."appointment_created_at",
+  find_dublicates."ingested_at_timestamp",
+        coalesce(cancelled.cancelled_flag, false) as cancelled_flag,
+        datediff(minute,appointment_time_start,appointment_time_end) as appointment_lenght_minutes
+
+ from find_dublicates
+
+left join cancelled
+on cancelled.appointment_id = find_dublicates.appointment_id
+where rnk = 1
+  );
+[0m17:21:10.021997 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:10.025951 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:10.027488 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:10.028704 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:10.904233 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:10.906621 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:10.907481 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:21:11.037685 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:11.043627 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule"
+[0m17:21:11.045499 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:11.046175 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule" cascade
+[0m17:21:11.307485 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:11.308443 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:11.308833 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:11.309408 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:12.066543 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:12.068868 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:12.069874 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:21:12.202166 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:12.218969 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:12.220320 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+alter table "prod"."public"."fact_apointment_schedule__dbt_tmp" rename to "fact_apointment_schedule"
+[0m17:21:13.258632 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:13.268492 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:13.270345 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:13.271688 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:14.156392 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:14.159883 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:14.161278 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:21:14.423154 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:14.437237 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule__dbt_backup"
+[0m17:21:14.439875 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:14.440843 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule__dbt_backup" cascade
+[0m17:21:14.703064 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:14.705321 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:14.706181 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:14.707024 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:21:14.843183 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:14.844373 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:21:14.845133 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:21:14.976016 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:14.978351 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (execute): 17:21:08.756535 => 17:21:14.977957
+[0m17:21:14.979285 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: ROLLBACK
+[0m17:21:15.240524 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: Close
+[0m17:21:15.245284 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df0a9c12-8418-4af3-9f49-ccca3fb15501', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c20460>]}
+[0m17:21:15.247858 [info ] [Thread-4  ]: 4 of 4 OK created sql table model public.fact_apointment_schedule .............. [[32mSUCCESS[0m in 8.07s]
+[0m17:21:15.250183 [debug] [Thread-4  ]: Finished running node model.dbt_remote.fact_apointment_schedule
+[0m17:21:15.255710 [debug] [MainThread]: Using redshift connection "master"
+[0m17:21:15.257067 [debug] [MainThread]: On master: BEGIN
+[0m17:21:15.257818 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:21:15.259029 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:21:15.259723 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:21:16.359485 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m17:21:16.359852 [debug] [MainThread]: On master: COMMIT
+[0m17:21:16.360139 [debug] [MainThread]: Using redshift connection "master"
+[0m17:21:16.360352 [debug] [MainThread]: On master: COMMIT
+[0m17:21:16.620198 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:21:16.622186 [debug] [MainThread]: On master: Close
+[0m17:21:16.625604 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:21:16.626395 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_added_event' was properly closed.
+[0m17:21:16.627133 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_deleted_event' was properly closed.
+[0m17:21:16.627847 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_edited_event' was properly closed.
+[0m17:21:16.628644 [debug] [MainThread]: Connection 'model.dbt_remote.fact_apointment_schedule' was properly closed.
+[0m17:21:16.629614 [info ] [MainThread]: 
+[0m17:21:16.630542 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 30.54 seconds (30.54s).
+[0m17:21:16.633922 [debug] [MainThread]: Command end result
+[0m17:21:16.657715 [info ] [MainThread]: 
+[0m17:21:16.658438 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:21:16.658910 [info ] [MainThread]: 
+[0m17:21:16.659589 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m17:21:16.662073 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 30.93008, "process_user_time": 2.643851, "process_kernel_time": 0.300196, "process_mem_max_rss": "128778240", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:21:16.662747 [debug] [MainThread]: Command `dbt run` succeeded at 17:21:16.662593 after 30.93 seconds
+[0m17:21:16.663196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066c6670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092d4a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090529a0>]}
+[0m17:21:16.663678 [debug] [MainThread]: Flushing usage events
+[0m17:23:39.455969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e318e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f22e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f4b700>]}
+
+
+============================== 17:23:39.458917 | d00f9170-71e3-482f-8354-bd76117b56a7 ==============================
+[0m17:23:39.458917 [info ] [MainThread]: Running with dbt=1.7.1
+[0m17:23:39.459262 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/annaantypenko/Desktop/Code/publishing-dbt/logs', 'profiles_dir': '/Users/annaantypenko/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -s +fact_apointment_schedule', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:23:39.636879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f22e20>]}
+[0m17:23:39.688283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059797c0>]}
+[0m17:23:39.690897 [info ] [MainThread]: Registered adapter: redshift=1.7.0
+[0m17:23:39.700084 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m17:23:39.736629 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:23:39.736895 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:23:39.737299 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_remote.example
+[0m17:23:39.741119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060390d0>]}
+[0m17:23:39.777494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a79ee0>]}
+[0m17:23:39.777823 [info ] [MainThread]: Found 4 models, 2 tests, 3 sources, 0 exposures, 0 metrics, 570 macros, 0 groups, 0 semantic models
+[0m17:23:39.778032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10597fe80>]}
+[0m17:23:39.778879 [info ] [MainThread]: 
+[0m17:23:39.779408 [debug] [MainThread]: Acquiring new redshift connection 'master'
+[0m17:23:39.780159 [debug] [ThreadPool]: Acquiring new redshift connection 'list_prod'
+[0m17:23:39.790289 [debug] [ThreadPool]: Using redshift connection "list_prod"
+[0m17:23:39.790844 [debug] [ThreadPool]: Acquiring new redshift connection 'list_prod'
+[0m17:23:39.791037 [debug] [ThreadPool]: On list_prod: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod"} */
+
+    select distinct nspname from pg_namespace
+[0m17:23:39.792922 [debug] [ThreadPool]: Using redshift connection "list_prod"
+[0m17:23:39.793284 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:23:39.793507 [debug] [ThreadPool]: On list_prod: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod"} */
+
+    select distinct nspname from pg_namespace
+[0m17:23:39.795671 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:39.795885 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:23:39.796072 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:39.796290 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:39.797421 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:41.099669 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:41.105134 [debug] [ThreadPool]: On list_prod: Close
+[0m17:23:41.106139 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:41.109612 [debug] [ThreadPool]: On list_prod: Close
+[0m17:23:41.113829 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_prod, now list_prod_public)
+[0m17:23:41.121412 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_prod, now list_prod_staging)
+[0m17:23:41.134387 [debug] [ThreadPool]: Using redshift connection "list_prod_staging"
+[0m17:23:41.127834 [debug] [ThreadPool]: Using redshift connection "list_prod_public"
+[0m17:23:41.134913 [debug] [ThreadPool]: On list_prod_staging: BEGIN
+[0m17:23:41.135318 [debug] [ThreadPool]: On list_prod_public: BEGIN
+[0m17:23:41.135680 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:23:41.136062 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:23:41.136635 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:41.137132 [debug] [ThreadPool]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:41.137538 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:41.137916 [debug] [ThreadPool]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:42.260911 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:42.262530 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:42.263543 [debug] [ThreadPool]: Using redshift connection "list_prod_public"
+[0m17:23:42.264244 [debug] [ThreadPool]: Using redshift connection "list_prod_staging"
+[0m17:23:42.265008 [debug] [ThreadPool]: On list_prod_public: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod_public"} */
+select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema,
+        'table' as type
+    from information_schema.tables
+    where table_schema ilike 'public'
+    and table_type = 'BASE TABLE'
+    union all
+    select
+      table_catalog as database,
+      table_name as name,
+      table_schema as schema,
+      case
+        when view_definition ilike '%create materialized view%'
+          then 'materialized_view'
+        else 'view'
+      end as type
+    from information_schema.views
+    where table_schema ilike 'public'
+[0m17:23:42.265713 [debug] [ThreadPool]: On list_prod_staging: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "list_prod_staging"} */
+select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema,
+        'table' as type
+    from information_schema.tables
+    where table_schema ilike 'staging'
+    and table_type = 'BASE TABLE'
+    union all
+    select
+      table_catalog as database,
+      table_name as name,
+      table_schema as schema,
+      case
+        when view_definition ilike '%create materialized view%'
+          then 'materialized_view'
+        else 'view'
+      end as type
+    from information_schema.views
+    where table_schema ilike 'staging'
+[0m17:23:42.545919 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:42.547982 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:42.551965 [debug] [ThreadPool]: On list_prod_public: ROLLBACK
+[0m17:23:42.555054 [debug] [ThreadPool]: On list_prod_staging: ROLLBACK
+[0m17:23:42.822565 [debug] [ThreadPool]: On list_prod_public: Close
+[0m17:23:42.824187 [debug] [ThreadPool]: On list_prod_staging: Close
+[0m17:23:42.847211 [debug] [MainThread]: Using redshift connection "master"
+[0m17:23:42.847763 [debug] [MainThread]: On master: BEGIN
+[0m17:23:42.848190 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:23:42.848822 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:42.849267 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:43.960891 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:43.961595 [debug] [MainThread]: Using redshift connection "master"
+[0m17:23:43.962169 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "connection_name": "master"} */
+with
+    relation as (
+        select
+            pg_class.oid as relation_id,
+            pg_class.relname as relation_name,
+            pg_class.relnamespace as schema_id,
+            pg_namespace.nspname as schema_name,
+            pg_class.relkind as relation_type
+        from pg_class
+        join pg_namespace
+          on pg_class.relnamespace = pg_namespace.oid
+        where pg_namespace.nspname != 'information_schema'
+          and pg_namespace.nspname not like 'pg\_%'
+    ),
+    dependency as (
+        select distinct
+            coalesce(pg_rewrite.ev_class, pg_depend.objid) as dep_relation_id,
+            pg_depend.refobjid as ref_relation_id,
+            pg_depend.refclassid as ref_class_id
+        from pg_depend
+        left join pg_rewrite
+          on pg_depend.objid = pg_rewrite.oid
+        where coalesce(pg_rewrite.ev_class, pg_depend.objid) != pg_depend.refobjid
+    )
+
+select distinct
+    dep.schema_name as dependent_schema,
+    dep.relation_name as dependent_name,
+    ref.schema_name as referenced_schema,
+    ref.relation_name as referenced_name
+from dependency
+join relation ref
+    on dependency.ref_relation_id = ref.relation_id
+join relation dep
+    on dependency.dep_relation_id = dep.relation_id
+[0m17:23:44.266817 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:44.272202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106133f40>]}
+[0m17:23:44.274082 [debug] [MainThread]: On master: ROLLBACK
+[0m17:23:44.548233 [debug] [MainThread]: Using redshift connection "master"
+[0m17:23:44.549978 [debug] [MainThread]: On master: BEGIN
+[0m17:23:44.681324 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:44.683045 [debug] [MainThread]: On master: COMMIT
+[0m17:23:44.684607 [debug] [MainThread]: Using redshift connection "master"
+[0m17:23:44.685634 [debug] [MainThread]: On master: COMMIT
+[0m17:23:44.946086 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:44.948024 [debug] [MainThread]: On master: Close
+[0m17:23:44.951502 [info ] [MainThread]: Concurrency: 4 threads (target='prod')
+[0m17:23:44.952437 [info ] [MainThread]: 
+[0m17:23:44.958667 [debug] [Thread-1  ]: Began running node model.dbt_remote.stg_appointment_added_event
+[0m17:23:44.959549 [debug] [Thread-2  ]: Began running node model.dbt_remote.stg_appointment_deleted_event
+[0m17:23:44.960205 [debug] [Thread-3  ]: Began running node model.dbt_remote.stg_appointment_edited_event
+[0m17:23:44.960990 [info ] [Thread-1  ]: 1 of 4 START sql table model staging.stg_appointment_added_event ............... [RUN]
+[0m17:23:44.962064 [info ] [Thread-2  ]: 2 of 4 START sql table model staging.stg_appointment_deleted_event ............. [RUN]
+[0m17:23:44.963249 [info ] [Thread-3  ]: 3 of 4 START sql table model staging.stg_appointment_edited_event .............. [RUN]
+[0m17:23:44.964755 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_prod_public, now model.dbt_remote.stg_appointment_added_event)
+[0m17:23:44.965960 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_prod_staging, now model.dbt_remote.stg_appointment_deleted_event)
+[0m17:23:44.967200 [debug] [Thread-3  ]: Acquiring new redshift connection 'model.dbt_remote.stg_appointment_edited_event'
+[0m17:23:44.967867 [debug] [Thread-1  ]: Began compiling node model.dbt_remote.stg_appointment_added_event
+[0m17:23:44.968465 [debug] [Thread-2  ]: Began compiling node model.dbt_remote.stg_appointment_deleted_event
+[0m17:23:44.969011 [debug] [Thread-3  ]: Began compiling node model.dbt_remote.stg_appointment_edited_event
+[0m17:23:44.974828 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:44.979856 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:44.984381 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:44.985441 [debug] [Thread-1  ]: Timing info for model.dbt_remote.stg_appointment_added_event (compile): 17:23:44.969334 => 17:23:44.985144
+[0m17:23:44.985981 [debug] [Thread-3  ]: Timing info for model.dbt_remote.stg_appointment_edited_event (compile): 17:23:44.980310 => 17:23:44.985715
+[0m17:23:44.986456 [debug] [Thread-2  ]: Timing info for model.dbt_remote.stg_appointment_deleted_event (compile): 17:23:44.975239 => 17:23:44.986226
+[0m17:23:44.986865 [debug] [Thread-1  ]: Began executing node model.dbt_remote.stg_appointment_added_event
+[0m17:23:44.987288 [debug] [Thread-3  ]: Began executing node model.dbt_remote.stg_appointment_edited_event
+[0m17:23:44.987697 [debug] [Thread-2  ]: Began executing node model.dbt_remote.stg_appointment_deleted_event
+[0m17:23:45.056508 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:45.058543 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:45.059418 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:45.060765 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:45.061908 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:45.062122 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:23:45.063117 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:45.063328 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:23:45.063527 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m17:23:45.063727 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:23:45.063915 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m17:23:45.064204 [debug] [Thread-2  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:45.064402 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m17:23:45.064638 [debug] [Thread-1  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:45.064848 [debug] [Thread-2  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:45.065081 [debug] [Thread-3  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:23:45.065284 [debug] [Thread-1  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:45.066437 [debug] [Thread-3  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:23:46.187199 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:46.189040 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:46.190176 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:46.191128 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:46.191873 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:46.192510 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:46.193779 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_deleted_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date,
+    appointment_time_start::time,
+    appointment_time_end::time,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_deleted_event"
+  );
+[0m17:23:46.194915 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_edited_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date,
+    appointment_time_start::time,
+    appointment_time_end::time,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_edited_event"
+  );
+[0m17:23:46.195818 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+
+  
+    
+
+  create  table
+    "prod"."staging"."stg_appointment_added_event__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+select
+    appointment_id,
+    first_name,
+    last_name,
+    email,
+    appointment_date::date as appointment_date,
+    appointment_time_start::time as appointment_time_start,
+    appointment_time_end::time as appointment_time_end,
+    appointment_type,
+    calendar_name,
+    appointment_created_at::timestamp as appointment_created_at,
+    timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second' as ingested_at_timestamp
+from "prod"."raw"."appointment_added_event"
+  );
+[0m17:23:48.462734 [debug] [Thread-3  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:23:48.469447 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:48.471369 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:48.472642 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:48.702362 [debug] [Thread-2  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:23:48.768297 [debug] [Thread-1  ]: SQL status: SUCCESS in 3.0 seconds
+[0m17:23:49.470606 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:49.473396 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:49.474795 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:23:49.605259 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:49.621678 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event"
+[0m17:23:49.628207 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:49.628714 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event" cascade
+[0m17:23:49.889315 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:49.893659 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:49.895284 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:49.896542 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:50.740314 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:50.740975 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:50.741370 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:23:50.871345 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:50.878424 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:50.880614 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:50.881142 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:50.881628 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+alter table "prod"."staging"."stg_appointment_edited_event__dbt_tmp" rename to "stg_appointment_edited_event"
+[0m17:23:50.882068 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:52.099267 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:52.100274 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:52.100860 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:23:52.229991 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:52.234112 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event"
+[0m17:23:52.235399 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:52.235833 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event" cascade
+[0m17:23:52.346041 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:52.367122 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:52.367648 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:52.368016 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:52.498287 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:52.500537 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:52.501370 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:52.501977 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:53.772241 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:53.774258 [debug] [Thread-3  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:53.776236 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:53.778450 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:23:53.908934 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:53.916501 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:53.920606 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:53.921469 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:53.922180 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+alter table "prod"."staging"."stg_appointment_deleted_event__dbt_tmp" rename to "stg_appointment_deleted_event"
+[0m17:23:53.922812 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:55.001759 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:55.002759 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:55.003425 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:23:55.133654 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:55.144769 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event"
+[0m17:23:55.146685 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:55.147358 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event" cascade
+[0m17:23:55.259098 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:55.266941 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:55.268069 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:55.268824 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:55.407308 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:55.411328 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:55.412363 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:55.413002 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:56.941633 [debug] [Thread-2  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:23:56.943763 [debug] [Thread-1  ]: SQL status: SUCCESS in 2.0 seconds
+[0m17:23:56.946655 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:56.947754 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:23:57.078353 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:57.086962 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:57.089980 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:57.090775 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:23:57.091468 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+alter table "prod"."staging"."stg_appointment_added_event__dbt_tmp" rename to "stg_appointment_added_event"
+[0m17:23:57.350418 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:57.355688 [debug] [Thread-3  ]: Applying DROP to: "prod"."staging"."stg_appointment_edited_event__dbt_backup"
+[0m17:23:57.357498 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:57.358172 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_edited_event"} */
+drop table if exists "prod"."staging"."stg_appointment_edited_event__dbt_backup" cascade
+[0m17:23:57.618906 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:57.623305 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:57.624894 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:57.626179 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: COMMIT
+[0m17:23:57.762820 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:57.764154 [debug] [Thread-3  ]: Using redshift connection "model.dbt_remote.stg_appointment_edited_event"
+[0m17:23:57.764947 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: BEGIN
+[0m17:23:57.894774 [debug] [Thread-3  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:57.896768 [debug] [Thread-3  ]: Timing info for model.dbt_remote.stg_appointment_edited_event (execute): 17:23:45.006850 => 17:23:57.896396
+[0m17:23:57.897609 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:57.898357 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: ROLLBACK
+[0m17:23:57.899055 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:23:57.998638 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:58.001698 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:58.002406 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:58.002942 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:58.159242 [debug] [Thread-3  ]: On model.dbt_remote.stg_appointment_edited_event: Close
+[0m17:23:58.160153 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:58.165742 [debug] [Thread-2  ]: Applying DROP to: "prod"."staging"."stg_appointment_deleted_event__dbt_backup"
+[0m17:23:58.167433 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:58.168558 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106128cd0>]}
+[0m17:23:58.169153 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_deleted_event"} */
+drop table if exists "prod"."staging"."stg_appointment_deleted_event__dbt_backup" cascade
+[0m17:23:58.170177 [info ] [Thread-3  ]: 3 of 4 OK created sql table model staging.stg_appointment_edited_event ......... [[32mSUCCESS[0m in 13.20s]
+[0m17:23:58.171035 [debug] [Thread-3  ]: Finished running node model.dbt_remote.stg_appointment_edited_event
+[0m17:23:58.428396 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:58.432740 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:58.433873 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:58.434519 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: COMMIT
+[0m17:23:58.974827 [debug] [Thread-2  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:58.975805 [debug] [Thread-2  ]: Using redshift connection "model.dbt_remote.stg_appointment_deleted_event"
+[0m17:23:58.976457 [debug] [Thread-1  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:23:58.977072 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: BEGIN
+[0m17:23:59.107810 [debug] [Thread-2  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:59.112179 [debug] [Thread-2  ]: Timing info for model.dbt_remote.stg_appointment_deleted_event (execute): 17:23:45.038217 => 17:23:59.111340
+[0m17:23:59.113510 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:59.114361 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: ROLLBACK
+[0m17:23:59.115172 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:23:59.374235 [debug] [Thread-2  ]: On model.dbt_remote.stg_appointment_deleted_event: Close
+[0m17:23:59.374690 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:59.377530 [debug] [Thread-1  ]: Applying DROP to: "prod"."staging"."stg_appointment_added_event__dbt_backup"
+[0m17:23:59.378176 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106042790>]}
+[0m17:23:59.379031 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:59.379405 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.stg_appointment_added_event"} */
+drop table if exists "prod"."staging"."stg_appointment_added_event__dbt_backup" cascade
+[0m17:23:59.379835 [info ] [Thread-2  ]: 2 of 4 OK created sql table model staging.stg_appointment_deleted_event ........ [[32mSUCCESS[0m in 14.41s]
+[0m17:23:59.380411 [debug] [Thread-2  ]: Finished running node model.dbt_remote.stg_appointment_deleted_event
+[0m17:23:59.637569 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:59.639468 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:59.640258 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:59.640885 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: COMMIT
+[0m17:23:59.775898 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:59.776767 [debug] [Thread-1  ]: Using redshift connection "model.dbt_remote.stg_appointment_added_event"
+[0m17:23:59.777319 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: BEGIN
+[0m17:23:59.906430 [debug] [Thread-1  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:23:59.907847 [debug] [Thread-1  ]: Timing info for model.dbt_remote.stg_appointment_added_event (execute): 17:23:44.987951 => 17:23:59.907568
+[0m17:23:59.908324 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: ROLLBACK
+[0m17:24:00.167647 [debug] [Thread-1  ]: On model.dbt_remote.stg_appointment_added_event: Close
+[0m17:24:00.172110 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106133f40>]}
+[0m17:24:00.173760 [info ] [Thread-1  ]: 1 of 4 OK created sql table model staging.stg_appointment_added_event .......... [[32mSUCCESS[0m in 15.21s]
+[0m17:24:00.175715 [debug] [Thread-1  ]: Finished running node model.dbt_remote.stg_appointment_added_event
+[0m17:24:00.177225 [debug] [Thread-4  ]: Began running node model.dbt_remote.fact_apointment_schedule
+[0m17:24:00.178245 [info ] [Thread-4  ]: 4 of 4 START sql table model public.fact_apointment_schedule ................... [RUN]
+[0m17:24:00.179704 [debug] [Thread-4  ]: Acquiring new redshift connection 'model.dbt_remote.fact_apointment_schedule'
+[0m17:24:00.180330 [debug] [Thread-4  ]: Began compiling node model.dbt_remote.fact_apointment_schedule
+[0m17:24:00.230662 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:00.231066 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:24:00.231348 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m17:24:00.231753 [debug] [Thread-4  ]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:24:00.232053 [debug] [Thread-4  ]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:24:01.348766 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:01.350937 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:01.352779 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'stg_appointment_added_event'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'stg_appointment_added_event'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'staging'
+        and tablename = 'stg_appointment_added_event'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    where table_schema = 'staging'
+    
+    order by ordinal_position
+[0m17:24:01.720793 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:01.733184 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:01.734721 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (compile): 17:24:00.180706 => 17:24:01.734300
+[0m17:24:01.735381 [debug] [Thread-4  ]: Began executing node model.dbt_remote.fact_apointment_schedule
+[0m17:24:01.744126 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:01.749321 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:01.749972 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+
+  
+    
+
+  create  table
+    "prod"."public"."fact_apointment_schedule__dbt_tmp"
+    
+    diststyle even
+    
+  as (
+    
+
+
+with added_and_edited as (
+
+    select * from "prod"."staging"."stg_appointment_added_event"
+    union all
+    select * from "prod"."staging"."stg_appointment_edited_event"
+),
+
+find_dublicates as (
+select 
+    *,
+    row_number() over (partition by appointment_id order by ingested_at_timestamp desc) as rnk
+from added_and_edited),
+
+cancelled as (
+    select appointment_id, true as cancelled_flag
+    from "prod"."staging"."stg_appointment_deleted_event"
+)
+
+select find_dublicates."appointment_id",
+  find_dublicates."first_name",
+  find_dublicates."last_name",
+  find_dublicates."email",
+  find_dublicates."appointment_date",
+  find_dublicates."appointment_time_start",
+  find_dublicates."appointment_time_end",
+  find_dublicates."appointment_type",
+  find_dublicates."calendar_name",
+  find_dublicates."appointment_created_at",
+  find_dublicates."ingested_at_timestamp",
+        coalesce(cancelled.cancelled_flag, false) as cancelled_flag,
+        datediff(minute,appointment_time_start,appointment_time_end) as appointment_lenght_minutes
+
+ from find_dublicates
+
+left join cancelled
+on cancelled.appointment_id = find_dublicates.appointment_id
+where rnk = 1
+  );
+[0m17:24:02.740825 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:02.743779 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:02.744731 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:02.745392 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:03.687779 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:03.689836 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:03.691029 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:24:03.821826 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:03.832190 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule"
+[0m17:24:03.833846 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:03.834460 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule" cascade
+[0m17:24:04.096019 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:04.099808 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:04.101090 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:04.101853 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:04.959250 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:04.961975 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:04.962648 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:24:05.093073 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:05.105935 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:05.106811 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+alter table "prod"."public"."fact_apointment_schedule__dbt_tmp" rename to "fact_apointment_schedule"
+[0m17:24:06.135196 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:06.143999 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:06.144909 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:06.145495 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:07.036677 [debug] [Thread-4  ]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:07.039384 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:07.040672 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:24:07.300811 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:07.313610 [debug] [Thread-4  ]: Applying DROP to: "prod"."public"."fact_apointment_schedule__dbt_backup"
+[0m17:24:07.315405 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:07.316056 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "dbt_remote", "target_name": "prod", "node_id": "model.dbt_remote.fact_apointment_schedule"} */
+drop table if exists "prod"."public"."fact_apointment_schedule__dbt_backup" cascade
+[0m17:24:07.574669 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:07.577341 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:07.578157 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:07.578753 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: COMMIT
+[0m17:24:07.716331 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:07.718640 [debug] [Thread-4  ]: Using redshift connection "model.dbt_remote.fact_apointment_schedule"
+[0m17:24:07.719945 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: BEGIN
+[0m17:24:07.850758 [debug] [Thread-4  ]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:07.854873 [debug] [Thread-4  ]: Timing info for model.dbt_remote.fact_apointment_schedule (execute): 17:24:01.735762 => 17:24:07.854194
+[0m17:24:07.856131 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: ROLLBACK
+[0m17:24:08.117278 [debug] [Thread-4  ]: On model.dbt_remote.fact_apointment_schedule: Close
+[0m17:24:08.120258 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd00f9170-71e3-482f-8354-bd76117b56a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106618f10>]}
+[0m17:24:08.121614 [info ] [Thread-4  ]: 4 of 4 OK created sql table model public.fact_apointment_schedule .............. [[32mSUCCESS[0m in 7.94s]
+[0m17:24:08.122673 [debug] [Thread-4  ]: Finished running node model.dbt_remote.fact_apointment_schedule
+[0m17:24:08.126005 [debug] [MainThread]: Using redshift connection "master"
+[0m17:24:08.126808 [debug] [MainThread]: On master: BEGIN
+[0m17:24:08.127333 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:24:08.128088 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m17:24:08.128646 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m17:24:09.230006 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m17:24:09.230673 [debug] [MainThread]: On master: COMMIT
+[0m17:24:09.231243 [debug] [MainThread]: Using redshift connection "master"
+[0m17:24:09.231676 [debug] [MainThread]: On master: COMMIT
+[0m17:24:09.491368 [debug] [MainThread]: SQL status: SUCCESS in 0.0 seconds
+[0m17:24:09.493565 [debug] [MainThread]: On master: Close
+[0m17:24:09.497238 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:24:09.498321 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_added_event' was properly closed.
+[0m17:24:09.499373 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_deleted_event' was properly closed.
+[0m17:24:09.500360 [debug] [MainThread]: Connection 'model.dbt_remote.stg_appointment_edited_event' was properly closed.
+[0m17:24:09.501355 [debug] [MainThread]: Connection 'model.dbt_remote.fact_apointment_schedule' was properly closed.
+[0m17:24:09.502719 [info ] [MainThread]: 
+[0m17:24:09.503994 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 29.72 seconds (29.72s).
+[0m17:24:09.507481 [debug] [MainThread]: Command end result
+[0m17:24:09.533186 [info ] [MainThread]: 
+[0m17:24:09.533863 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:24:09.534336 [info ] [MainThread]: 
+[0m17:24:09.534850 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m17:24:09.537389 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 30.11519, "process_user_time": 2.50271, "process_kernel_time": 0.290866, "process_mem_max_rss": "129613824", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:24:09.538171 [debug] [MainThread]: Command `dbt run` succeeded at 17:24:09.537991 after 30.12 seconds
+[0m17:24:09.538686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e318e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f22e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a79ee0>]}
+[0m17:24:09.539230 [debug] [MainThread]: Flushing usage events
