@@ -36,4 +36,4 @@ models:
       - name: appointment_type
       - name: calendar_name
       - name: appointment_created_at
-      - anme: cancelled_flag
+      - name: cancelled_flag
