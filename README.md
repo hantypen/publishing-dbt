@@ -41,4 +41,4 @@ dbt source freshness runs data freshness checks
 ```
 Currently, the project has only 1 public model ```fact_apointment_schedule``` that could be found in models folder. ```yml``` file contains documentation on specifics.<br>
 Terminal output should look like this:<br>
-![](https://cdn.zappy.app/ba8ef0a3eb0ee2dfe99e1d334eb3016b.png)
+![](https://cdn.zappy.app/df855570a699c05fff745348fb16e8ab.png)
