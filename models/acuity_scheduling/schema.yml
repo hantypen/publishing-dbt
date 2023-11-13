@@ -37,3 +37,4 @@ models:
       - name: calendar_name
       - name: appointment_created_at
       - name: cancelled_flag
+      - name: appointment_lenght_minutes

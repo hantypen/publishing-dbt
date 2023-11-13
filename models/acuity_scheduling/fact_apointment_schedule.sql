@@ -24,7 +24,8 @@ cancelled as (
 )
 
 select {{ dbt_utils.star(from=ref('stg_appointment_added_event'), relation_alias='find_dublicates') }},
-        cancelled.cancelled_flag
+        coalesce(cancelled.cancelled_flag, false) as cancelled_flag,
+        datediff(minute,appointment_time_start,appointment_time_end) as appointment_lenght_minutes
 
  from find_dublicates
 

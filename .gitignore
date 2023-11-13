@@ -2,3 +2,4 @@ dbt-venv/
 dbt_packages/
 target/
 logs/dbt.log
+models/acuity_scheduling/schema.yml
