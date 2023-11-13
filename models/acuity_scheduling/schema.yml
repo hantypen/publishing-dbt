@@ -28,19 +28,30 @@ models:
           - unique
           - not_null
       - name: first_name
+        description: "User first name"
       - name: last_name
+        description: "User last name"
       - name: email
+        description: "User Email"
       - name: appointment_date
+        description: "Date of appointment"
       - name: appointment_time_start
+        description: "Time appointment starts/user timezome" 
         meta:
           dimension:
             type: string
       - name: appointment_time_end
+        description: "Time appointment ends/user timezome" 
         meta:
           dimension:
             type: string
       - name: appointment_type
+        description: "Appointment type: 1-1, Intro Call, Onboarding" 
       - name: calendar_name
+        description: "Name of Coach calendar" 
       - name: appointment_created_at
+        description: "Date appointment was created" 
       - name: cancelled_flag
+        description: "TRUE if appointment was cancelled" 
       - name: appointment_lenght_minutes
+        description: "Appointment lenght in minutes" 
