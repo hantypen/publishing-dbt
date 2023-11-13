@@ -1,0 +1,38 @@
+
+version: 2
+
+sources:
+  - name: acuity_scheduling
+    database: prod
+    freshness:
+      warn_after: {count: 14, period: day}
+      error_after: {count: 20, period: day}
+    loaded_at_field: "ingestimestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second'ted_at"
+    schema: raw
+    tables:
+      - name: appointment_added_event
+        description: "Event that indicates appointment creation, configured via Zapier"
+      - name: appointment_edited_event
+        description: "Event that indicates rescheduling appointment, configured via Zapier"
+      - name: appointment_deleted_event
+        description: "Event that indicates appointment deletion, configured via Zapier"
+
+
+models:
+  - name: fact_apointment_schedule
+    description: "Fact model that represents business process of scheduling appointments"
+    columns:
+      - name: appointment_id
+        description: "Appointment Id"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: appointment_date
+      - name: appointment_time_start
+      - name: appointment_time_end
+      - name: appointment_type
+      - name: calendar_name
+      - name: appointment_created_at
