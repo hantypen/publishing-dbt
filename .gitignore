@@ -1,3 +1,4 @@
 dbt-venv/
 dbt_packages/
 target/
+logs/dbt.log
