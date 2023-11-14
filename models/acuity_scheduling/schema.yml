@@ -7,7 +7,7 @@ sources:
     freshness:
       warn_after: {count: 14, period: day}
       error_after: {count: 20, period: day}
-    loaded_at_field: "ingested_at::timestamp 'epoch' + cast(ingested_at AS bigint) * interval '1 second"
+    loaded_at_field: "ingested_at"
     schema: raw
     tables:
       - name: appointment_added_event
